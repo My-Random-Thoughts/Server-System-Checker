@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Getting Started - A Quick Start Guide
+</span></div></div><div class="cdclvSection">
+<p>
+	When you create a new configuration profile, you are given the option to start with an example layout.
+	Choosing <span class="button">No</span> to this will give you a blank window.
+	From here you will want to start creating some logical groups for your scanning needs.
+</p>
+<p>
+	Groups can represent anything you need them to...
+	<ol>
+		<li><strong>Functions</strong>:  <i>Domain Controllers</i>, <i>Terminal Servers</i>, <i>Development Servers.</i></li>
+		<li><strong>Locations</strong>:  <i>London</i>, <i>Tokyo</i>, <i>New York.</i></li>
+		<li><strong>Importance</strong>: <i>Production</i>, <i>Testing</i>, <i>Development</i></li>
+	</ol>
+</p>
+
+<!-- ################################################## -->
+
+<h2>Adding Groups</h2>
+<p>
+	Groups are used for organising your servers into a logical and structured way.
+	Groups help to organise servers into units so that different resource checks can be set against different groups
+</p>
+<p>
+	By default, a groups colour is yellow, however there are several different colours to choose from when creating or editing a group.
+	See the section titled <strong>Group Properties</strong> for more information.
+</p>
+<p>
+	To start creating your groups,
+	<ol type="1">
+		<li>Right-click anywhere inside the left hand panel,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Group___1___Yellow" height="16px" width="16px">&nbsp; Add Group</span> from the pop-up menu,</li>
+		<li>Enter a name for this new group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new groups, or sub-groups until your structure is complete.
+</p>
+<h3>Group Colours</h3>
+<p>
+	By default, a group colour is yellow, however there are several colours to choose from when creating or editing a group.
+</p>
+<ol class="compact">
+	<img src="data:image/png;base64,_16___Group___1___Black"  height="16px" width="16px">&nbsp;	- Black<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Blue"   height="16px" width="16px">&nbsp; - Blue<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Cyan"   height="16px" width="16px">&nbsp; - Cyan<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Green"  height="16px" width="16px">&nbsp; - Green<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Grey"   height="16px" width="16px">&nbsp; - Grey<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Orange" height="16px" width="16px">&nbsp; - Orange<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Pink"   height="16px" width="16px">&nbsp; - Pink<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Red"    height="16px" width="16px">&nbsp; - Red<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___White"  height="16px" width="16px">&nbsp; - White<br/><br/>
+	<img src="data:image/png;base64,_16___Group___1___Yellow" height="16px" width="16px">&nbsp; - Yellow (default)<br/>
+</ol>
+
+<!-- ################################################## -->
+
+<h2>Adding Servers</h2>
+<p>
+	Servers are the remote machines that we want to scan.
+</p>
+<p>
+	They can be added by either
+	<ol>
+		<li>typing one at a time,</li>
+		<li>importing from a text file, or</li>
+		<li>scanning the current active directory domain</li>
+	</ol>
+</p>
+<p>
+	To start adding servers to your group structure,
+	<ol type="1">
+		<li>Select and right-click the group that you want to add servers too,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Server" height="16px" width="16px">&nbsp; Add Server(s)</span> from the pop-up menu,</li>
+		<li>From the new window that appears, either:
+		<ol type="a">
+			<li>Click the <span class="button"><img src="data:image/png;base64,_16___Add" height="16px" width="16px"></span></li> Add button and enter a server name,
+			<li>From the <strong>Import From :</strong> drop down list, choose:
+			<ol>
+				<li>Active Directory</li>
+				<li>External Text File</li>
+			</ol>
+			</li>
+		</ol>
+		<li>Click <span class="button">OK</span> to add the servers to the selected group.</li>
+	</ol>
+</p>
+<p>
+	<strong>Note:</strong> If you add an IP address, the application will try to resolve it into a name using DNS,
+	if the &nbsp;<img src="data:image/png;base64,checkbox" height="13px" width="13px"> <strong>Resolve All IP addresses</strong> is selected.
+</p>
+
+<!-- ################################################## -->
+
+<h2>Adding Resources</h2>
+<p>
+	Resources are added to group levels, and take a hierarchical nature.
+	That is, a resource added to the root of a large sub-group tree, will be scanned at every level of that tree.
+</p>
+<p>
+	To start adding resources to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add" height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose one of the resource types from the pop-out menu</li>
+		<ol type="a">
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___Eventlog" height="16px" width="16px">&nbsp; Eventlog Scan</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___File"     height="16px" width="16px">&nbsp; File Check</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___Drive"    height="16px" width="16px">&nbsp; Freespace Threshold</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___Hotfix"   height="16px" width="16px">&nbsp; Hotfix Patch Check</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___Registry" height="16px" width="16px">&nbsp; Registry Scan</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___WMIQuery" height="16px" width="16px">&nbsp; WMI Query</span> or,</li>
+			<li><span class="menu"><img src="data:image/png;base64,_16___Resource___Services" height="16px" width="16px">&nbsp; Windows Services</span>.</li>
+		</ol>
+		<li>From the new window that appears complete the required details<br/>(<i>detailed information is shown later</i>).</li>
+		<li>Click <span class="button">OK</span> to add the selected resource to the selected group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new resources.  Remember, resources are hierarchical.
+</p>
+
+<!-- ################################################## -->
+
+<h2>Scanning The Selected Group</h2>
+<p>
+	Once you have your environment configured as you need it, you can start to scan your groups.
+	Scanning before a large task will allow you to get a base line of results to compare against.
+</p>
+<p>
+	To start scanning a group,
+	<ol type="1">
+		<li>Select and right-click the group you want to scan,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Scan___Scanning" height="16px" width="16px">&nbsp; Scan Group</span> from the pop-up menu,</li>
+	</ol>
+</p>
+<p>
+	A new scan window will appear, and will show the tree structure of the selected group, along with all the servers in that structure.
+	The scan will start automatically, and a progress bar will show its current status.
+</p>
+<p>
+	Each server will scanned in turn, with the current status of each resource type shown.
+</p>
+<p>
+	Once the scan has completed, you can hover over each scan result icon to see some brief information about the result.
+	From here you have several options:
+	<ol type="a">
+		<li>Double-click a server to see it's detailed scan report, or,</li>
+		<li>Click the <span class="button">Export</span> button to produce a summary of the results currently shown.</li>
+		<li>If a server was rejected or not scanned, you can right-click it and select
+			<span class="menu"><img src="data:image/png;base64,_16___ChangeState" height="16px" width="16px">&nbsp; Re-scan Selected Server</span>
+		</li>
+	</ol>
+</p>
+
+<!-- ################################################## -->
+
+<h2>Detailed Scan Report</h2>
+<p>
+	The detailed scan report will give you the complete picture of any errors or warnings that may have occurred when scanning the selected server.
+	This window has several tabs along the top, one for each scan area.
+</p>
+<h3>Windows Services</h3>
+<p>
+	This tab shows any windows services that are not as expected.
+	That is, any stopped service that should be started, and any started service that should be stopped.
+</p>
+<h3>Hotfix Patches</h3>
+<p>
+	This tab shows any hotfixes that are not as expected.
+	That is, any missing hotfixes that should be installed, and any installed hotfixes that shouldn't be there.
+</p>
+<h3>Eventlog Scan</h3>
+<p>
+	This tab shows any eventlog entries that have appeared since the selected server was last rebooted.
+</p>
+<h3>Registry Scan</h3>
+<p>
+	This tab shows any registry entries that are incorrect or missing.
+</p>
+<h3>File Check</h3>
+<p>
+	This tab shows the results of the file scanning check.
+</p>
+<h3>WMI Query</h3>
+<p>
+	This tab shows the results of the custom WMI Queries that you have configured
+</p>
+<h3>Freespace Threshold</h3>
+<p>
+	This tab shows the selected servers main system drive (usually C:) as a pie chart representing the free space available.
+	It also lists any other local drives to this server, and the free space available.
+</p>
+
+<!-- ################################################## -->
+
+<h2>Export Result Summary</h2>
+<p>
+	This option allows you to export the current scan results to a HTML based report for saving and viewing at a later date.
+</p>
+<p>
+	To create a new HTML based report,
+	<ol type="1">
+		<li>Select either:</li>
+		<ol type="a">
+			<li><img src="data:image/png;base64,radiobutton___on" height="13px" width="13px">&nbsp; Simple (default), or,</li>
+			<li><img src="data:image/png;base64,radiobutton" height="13px" width="13px">&nbsp; Detailed</li>
+			<br/><br/>
+			<li><img src="data:image/png;base64,checkbox___on" height="13px" width="13px">&nbsp; Include Image Icons (increases report file size)</li>
+			<li><img src="data:image/png;base64,checkbox___on" height="13px" width="13px">&nbsp; Include Server Uptime (if available)</li>
+			<br/><br/>
+			If you chose the detailed report, you have the following further options:
+			<ol type="a" start="5">
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List all incorrect services</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List all incorrect hotfixes</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List every reported eventlog entry</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List all missing registry keys</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List every incorrect file</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List all WMI query results</li>
+				<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; Show system drive space status</li>
+				<li>&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; List all scanned drives</li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; Add excluded drives</li>
+			</ol>
+		</ol>
+		<li>Click <span class="button">OK</span> to run the report and save it to the current folder.</li>
+	</ol>
+</p>
+<p>
+	Including image icons into the report will increase the size of the resulting report file, but will give a nicer looking and more professional output.
+</p>
+<p></p>
+</body></html>

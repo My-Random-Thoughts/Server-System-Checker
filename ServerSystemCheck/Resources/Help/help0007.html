@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Windows Services
+</span></div></div><div class="cdclvSection">
+<p>
+	Windows Services can be scanned to check if a specified service is started or stopped.
+	The selectable services list is loaded from the localhost first, but can be obtained from the servers added to the selected group.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start adding a Windows Services resource to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add"      height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Resource___Services" height="16px" width="16px">&nbsp; Windows Services</span> from the pop-out menu,</li>
+		<li>From the new window that appears, select either one single service or multiple services by holding the CTRL key.</li>
+		<li>If you want to load the list of services from another server, select it from the drop down list</li>
+		<li>Select the required scan result returned if the services are not found.<br/>
+			</em>Options are:</em>
+			<ol style="compact">
+				<img src="data:image/png;base64,_16___Scan___Pass" height="16px" width="16px">&nbsp; OK (Ignore),<br/>
+				<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px">&nbsp; Warning,<br/>
+				<img src="data:image/png;base64,_16___Scan___Failed" height="16px" width="16px">&nbsp; Fail.
+			</ol>
+		</li>
+		<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new resources.
+</p>
+<h2>Notes</h2>
+<p>
+	<strong>Select scan result for missing services</strong> allows you to check if a particular service is not installed on a server.
+	If you set this to &nbsp;<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px"> Warning or
+	&nbsp;<img src="data:image/png;base64,_16___Scan___Failed" height="16px" width="16px"> Fail, then that result will be returned when the
+	server is scanned.  If you just want to skip the fact that a service is not installed, set this to 
+	&nbsp;<img src="data:image/png;base64,_16___Scan___Pass" height="16px" width="16px"> OK (Ignore).
+</p>
+
+<h2>Example Images</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,add_services_1">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_services_2">
+	</ol>
+</p>
+</body></html>

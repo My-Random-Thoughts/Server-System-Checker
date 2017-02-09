@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B05B10C-FAE0-47EE-AFA6-5605D38550F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ServerSystemChecker.My.MyApplication</StartupObject>
+    <RootNamespace>ServerSystemChecker</RootNamespace>
+    <AssemblyName>Server System Checker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\_Publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Server System Checker.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Server System Checker.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>21257E78FA1D11B7D35D8921C8F780F582F9480B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ServerCheck_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icoMain.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DocumentationFile>Server System Checker.xml</DocumentationFile>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Optimize>false</Optimize>
+    <DebugType>Full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DocumentationFile>Server System Checker.xml</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Controls\clsInterval.vb" />
+    <Compile Include="Controls\clsMessageBox.vb" />
+    <Compile Include="Controls\ctrlListView_CollapseGroups.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmServerStats.Designer.vb">
+      <DependentUpon>frmServerStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRegistrySearch.Designer.vb">
+      <DependentUpon>frmAddRegistrySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRegistrySearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddServicesChangeState.Designer.vb">
+      <DependentUpon>frmAddServicesChangeState.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddServicesChangeState.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddWMIQuery.Designer.vb">
+      <DependentUpon>frmAddWMIQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddWMIQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddWMIQueryTestResults.Designer.vb">
+      <DependentUpon>frmAddWMIQueryTestResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddWMIQueryTestResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddWMIQueryWhereBuilder.Designer.vb">
+      <DependentUpon>frmAddWMIQueryWhereBuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddWMIQueryWhereBuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddWMIQueryWhereBuilderCalc.Designer.vb">
+      <DependentUpon>frmAddWMIQueryWhereBuilderCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddWMIQueryWhereBuilderCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommandLine.Designer.vb">
+      <DependentUpon>frmCommandLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommandLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindResource.Designer.vb">
+      <DependentUpon>frmFindResource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindResource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindServer.Designer.vb">
+      <DependentUpon>frmFindServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoveCopyServers.Designer.vb">
+      <DependentUpon>frmMoveCopyServers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoveCopyServers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertiesGroup.Designer.vb">
+      <DependentUpon>frmPropertiesGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertiesGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertiesServerDriveExclude.Designer.vb">
+      <DependentUpon>frmPropertiesServerDriveExclude.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertiesServerDriveExclude.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResourceDuplicationSelection.Designer.vb">
+      <DependentUpon>frmResourceDuplicationSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResourceDuplicationSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerDuplication.Designer.vb">
+      <DependentUpon>frmServerDuplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerDuplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceControl.Designer.vb">
+      <DependentUpon>frmServiceControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnhandledException.Designer.vb">
+      <DependentUpon>frmUnhandledException.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnhandledException.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddHotFix.Designer.vb">
+      <DependentUpon>frmAddHotFix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddHotFix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlListView_DriveSpaceTile.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAddFileCheck.Designer.vb">
+      <DependentUpon>frmAddFileCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFileCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRegistry.Designer.vb">
+      <DependentUpon>frmAddRegistry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRegistry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddServer.Designer.vb">
+      <DependentUpon>frmAddServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectionEditor.Designer.vb">
+      <DependentUpon>frmConnectionEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectionEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertiesServer.Designer.vb">
+      <DependentUpon>frmPropertiesServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertiesServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DragDrop.Designer.vb">
+      <DependentUpon>frm_DragDrop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DragDrop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.vb">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoveCopyResource.Designer.vb">
+      <DependentUpon>frmMoveCopyResource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoveCopyResource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanLegend.Designer.vb">
+      <DependentUpon>frmScanLegend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanLegend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResourceDuplication.Designer.vb">
+      <DependentUpon>frmResourceDuplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResourceDuplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResourceExclusionsEventLog.Designer.vb">
+      <DependentUpon>frmResourceExclusionsEventLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResourceExclusionsEventLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrlComboBox_Icons.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAddEventlog.Designer.vb">
+      <DependentUpon>frmAddEventlog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEventlog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFreeSpace.Designer.vb">
+      <DependentUpon>frmAddFreeSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFreeSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanReport.Designer.vb">
+      <DependentUpon>frmScanReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScan.Designer.vb">
+      <DependentUpon>frmScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanResults.Designer.vb">
+      <DependentUpon>frmScanResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddServices.Designer.vb">
+      <DependentUpon>frmAddServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\clsListviewSorter.vb" />
+    <Compile Include="Controls\ctrlListView_SubIcons.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmPropertiesServerGetAll.Designer.vb">
+      <DependentUpon>frmPropertiesServerGetAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertiesServerGetAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="modMain.vb" />
+    <Compile Include="modXML.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmServerStats.resx">
+      <DependentUpon>frmServerStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRegistrySearch.resx">
+      <DependentUpon>frmAddRegistrySearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddServicesChangeState.resx">
+      <DependentUpon>frmAddServicesChangeState.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddWMIQuery.resx">
+      <DependentUpon>frmAddWMIQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddWMIQueryTestResults.resx">
+      <DependentUpon>frmAddWMIQueryTestResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddWMIQueryWhereBuilder.resx">
+      <DependentUpon>frmAddWMIQueryWhereBuilder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddWMIQueryWhereBuilderCalc.resx">
+      <DependentUpon>frmAddWMIQueryWhereBuilderCalc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommandLine.resx">
+      <DependentUpon>frmCommandLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindResource.resx">
+      <DependentUpon>frmFindResource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindServer.resx">
+      <DependentUpon>frmFindServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoveCopyServers.resx">
+      <DependentUpon>frmMoveCopyServers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertiesGroup.resx">
+      <DependentUpon>frmPropertiesGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertiesServerDriveExclude.resx">
+      <DependentUpon>frmPropertiesServerDriveExclude.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResourceDuplicationSelection.resx">
+      <DependentUpon>frmResourceDuplicationSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerDuplication.resx">
+      <DependentUpon>frmServerDuplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceControl.resx">
+      <DependentUpon>frmServiceControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnhandledException.resx">
+      <DependentUpon>frmUnhandledException.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFileCheck.resx">
+      <DependentUpon>frmAddFileCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddHotFix.resx">
+      <DependentUpon>frmAddHotFix.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRegistry.resx">
+      <DependentUpon>frmAddRegistry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEventlog.resx">
+      <DependentUpon>frmAddEventlog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFreeSpace.resx">
+      <DependentUpon>frmAddFreeSpace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddServer.resx">
+      <DependentUpon>frmAddServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectionEditor.resx">
+      <DependentUpon>frmConnectionEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertiesServer.resx">
+      <DependentUpon>frmPropertiesServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DragDrop.resx">
+      <DependentUpon>frm_DragDrop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoveCopyResource.resx">
+      <DependentUpon>frmMoveCopyResource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanReport.resx">
+      <DependentUpon>frmScanReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScan.resx">
+      <DependentUpon>frmScan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanLegend.resx">
+      <DependentUpon>frmScanLegend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanResults.resx">
+      <DependentUpon>frmScanResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddServices.resx">
+      <DependentUpon>frmAddServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResourceDuplication.resx">
+      <DependentUpon>frmResourceDuplication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResourceExclusionsEventLog.resx">
+      <DependentUpon>frmResourceExclusionsEventLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertiesServerGetAll.resx">
+      <DependentUpon>frmPropertiesServerGetAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Help\scan results - wmiquery.png" />
+    <None Include="Resources\Images\Header_Separator.ico" />
+    <None Include="Resources\Icons\16\16 - RadioButton - On.ico" />
+    <None Include="Resources\Icons\16\16 - RadioButton - Off.ico" />
+    <None Include="Resources\Images\Help\group properties 2.png" />
+    <None Include="Resources\Images\Help\group properties 1.png" />
+    <None Include="Resources\Images\Help\group properties 0.png" />
+    <None Include="Resources\Images\Help\menu - group right click - disabled.png" />
+    <None Include="Resources\Images\Help\menu - resource right click - 1 - disabled.png" />
+    <None Include="Resources\Images\Help\menu - resource right click - 0 - disabled.png" />
+    <None Include="Resources\Help\help0036.html" />
+    <None Include="Resources\Icons\48\48 - MainIcon - Error.ico" />
+    <None Include="Resources\Icons\48\48 - Registry - Search.ico" />
+    <None Include="Resources\Images\Other\fs-r-y_disabled.png" />
+    <None Include="Resources\Images\Other\fs-r-r_disabled.png" />
+    <None Include="Resources\Images\Other\fs-r-g_disabled.png" />
+    <None Include="Resources\Images\Other\fs-l-y_disabled.png" />
+    <None Include="Resources\Images\Other\fs-l-r_disabled.png" />
+    <None Include="Resources\Images\Other\fs-l-g_disabled.png" />
+    <None Include="Resources\Images\Other\fs-c-y_disabled.png" />
+    <None Include="Resources\Images\Other\fs-c-r_disabled.png" />
+    <None Include="Resources\Images\Other\fs-c-g_disabled.png" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - Disabled.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Drive - Disabled.ico" />
+    <None Include="Resources\Icons\16\16 - Unknown.ico" />
+    <None Include="Resources\Images\Other\fs-bg-long.png" />
+    <None Include="Resources\Icons\16\16 - Select Invert.ico" />
+    <None Include="Resources\Icons\16\16 - Select None.ico" />
+    <None Include="Resources\Icons\16\16 - Select All.ico" />
+    <None Include="Resources\Images\FullPath_Show.ico" />
+    <None Include="Resources\Images\FullPath_Hide.ico" />
+    <None Include="Resources\Images\Expand.ico" />
+    <None Include="Resources\Images\Collapse.ico" />
+    <None Include="Resources\Images\Network.ico" />
+    <None Include="Resources\Help\help0035.html" />
+    <None Include="Resources\Images\Help\add wmi - 3.png" />
+    <None Include="Resources\Images\Help\add wmi - 2.png" />
+    <None Include="Resources\Images\Help\add wmi - 1.png" />
+    <None Include="Resources\Images\Help\welcome.png" />
+    <None Include="Resources\Help\Report Examples.html" />
+    <None Include="Resources\Icons\48\48 - WMIQuery.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - WMIQuery.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - NotEqualTo.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - LessThan.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - GreaterThan.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - EqualTo.ico" />
+    <None Include="Resources\Help\help0034.html" />
+    <None Include="Resources\Images\Help\server multi-select - 2.png" />
+    <None Include="Resources\Images\Help\server multi-select - 1.png" />
+    <None Include="Resources\Icons\16\16 - CheckBox - Off.ico" />
+    <None Include="Resources\Icons\16\16 - CheckBox - On.ico" />
+    <None Include="Resources\Icons\16\16 - Calendar - Exactly.ico" />
+    <None Include="Resources\Help\stylesheet.css" />
+    <None Include="Resources\Help\help0000.html" />
+    <None Include="Resources\Help\help0001.html" />
+    <None Include="Resources\Help\help0003.html" />
+    <None Include="Resources\Help\help0004.html" />
+    <None Include="Resources\Help\help0005.html" />
+    <None Include="Resources\Help\help0006.html" />
+    <None Include="Resources\Help\help0007.html" />
+    <None Include="Resources\Help\help0008.html" />
+    <None Include="Resources\Help\help0009.html" />
+    <None Include="Resources\Help\help0010.html" />
+    <None Include="Resources\Help\help0011.html" />
+    <None Include="Resources\Help\help0013.html" />
+    <None Include="Resources\Help\help0017.html" />
+    <None Include="Resources\Help\help0018.html" />
+    <None Include="Resources\Help\help0019.html" />
+    <None Include="Resources\Help\help0020.html" />
+    <None Include="Resources\Help\help0021.html" />
+    <None Include="Resources\Help\help0022.html" />
+    <None Include="Resources\Help\help0023.html" />
+    <None Include="Resources\Help\help0024.html" />
+    <None Include="Resources\Help\help0025.html" />
+    <None Include="Resources\Images\Other\tt-bg-x1.png" />
+    <None Include="Resources\Images\Other\tt-l-x1.png" />
+    <None Include="Resources\Images\Other\tt-r-x1.png" />
+    <None Include="Resources\Images\Other\fs-bg.png" />
+    <None Include="Resources\Images\Other\fs-r-r.png" />
+    <None Include="Resources\Images\Other\fs-c-r.png" />
+    <None Include="Resources\Images\Other\fs-l-r.png" />
+    <None Include="Resources\Icons\16\16 - Properties.ico" />
+    <None Include="Resources\Icons\16\16 - Registry - HEX.ico" />
+    <None Include="Resources\Icons\16\16 - Registry - STR.ico" />
+    <None Include="Resources\Icons\16\16 - Remove.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Failed.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Pass.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Scanning.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Skipped.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Unknown.ico" />
+    <None Include="Resources\Icons\16\16 - Server.ico" />
+    <None Include="Resources\Icons\16\16 - YouAreHere.ico" />
+    <None Include="Resources\Icons\48\48 - Copy.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - Critical.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - OK.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - System.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - Unknown.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - Warning.ico" />
+    <None Include="Resources\Icons\48\48 - Eventlog.ico" />
+    <None Include="Resources\Icons\48\48 - File.ico" />
+    <None Include="Resources\Icons\48\48 - Folder.ico" />
+    <None Include="Resources\Icons\48\48 - Hotfix.ico" />
+    <None Include="Resources\Icons\48\48 - MainIcon.ico" />
+    <None Include="Resources\Icons\48\48 - Registry.ico" />
+    <None Include="Resources\Icons\48\48 - Report.ico" />
+    <None Include="Resources\Icons\48\48 - Search.ico" />
+    <None Include="Resources\Icons\48\48 - Server.ico" />
+    <None Include="Resources\Icons\48\48 - Services.ico" />
+    <None Include="Resources\Icons\16\16 - Add.ico" />
+    <None Include="Resources\Icons\16\16 - Blank.ico" />
+    <None Include="Resources\Icons\16\16 - Calendar - OnOrAfter.ico" />
+    <None Include="Resources\Icons\16\16 - Calendar - OnOrBefore.ico" />
+    <None Include="Resources\Icons\16\16 - ChangeState.ico" />
+    <None Include="Resources\Icons\16\16 - Copy.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Critical.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Error.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Failure.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Information.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Success.ico" />
+    <None Include="Resources\Icons\16\16 - EventLog - Warning.ico" />
+    <None Include="Resources\Images\Other\fs-r-y.png" />
+    <None Include="Resources\Images\Other\fs-c-y.png" />
+    <None Include="Resources\Images\Other\fs-l-y.png" />
+    <None Include="Resources\Images\Help\legend.png" />
+    <None Include="Resources\Images\Help\main - list view.png" />
+    <None Include="Resources\Images\Help\menu - add resource.png" />
+    <None Include="Resources\Images\Help\menu - add to excluded list.png" />
+    <None Include="Resources\Images\Help\menu - change checking state.png" />
+    <None Include="Resources\Images\Help\menu - group right click.png" />
+    <None Include="Resources\Images\Help\radiobutton - on.png" />
+    <None Include="Resources\Images\Help\radiobutton.png" />
+    <None Include="Resources\Images\Help\resource duplication.png" />
+    <None Include="Resources\Images\Help\scan results - eventlog.png" />
+    <None Include="Resources\Images\Help\scan results - file check.png" />
+    <None Include="Resources\Images\Help\scan results - free space.png" />
+    <None Include="Resources\Images\Help\scan results - registry.png" />
+    <None Include="Resources\Images\Help\scan results - services.png" />
+    <None Include="Resources\Images\Help\scan.png" />
+    <None Include="Resources\Images\Help\server connection editor.png" />
+    <None Include="Resources\Images\Help\server properties all.png" />
+    <None Include="Resources\Images\Help\server properties.png" />
+    <None Include="Resources\Images\Help\add file scan.png" />
+    <None Include="Resources\Images\Help\add free space.png" />
+    <None Include="Resources\Images\Help\add hotfix - 0.png" />
+    <None Include="Resources\Images\Help\add hotfix - 1.png" />
+    <None Include="Resources\Images\Help\add hotfix - 2.png" />
+    <None Include="Resources\Images\Help\add hotfix - 3.png" />
+    <None Include="Resources\Images\Help\checkbox - on.png" />
+    <None Include="Resources\Images\Help\checkbox.png" />
+    <None Include="Resources\Images\Help\eventlog exclusions.png" />
+    <None Include="Resources\Images\Help\export summary report.png" />
+    <None Include="Resources\Images\Help\add server - 2.png" />
+    <None Include="Resources\Images\Help\add server - 0.png" />
+    <None Include="Resources\Images\Help\add server - 1.png" />
+    <None Include="Resources\Images\Help\menu - resource right click - 0.png" />
+    <None Include="Resources\Images\Help\menu - resource right click - 1.png" />
+    <None Include="Resources\Images\Help\resource - movecopy.png" />
+    <None Include="Resources\Images\Help\about.png" />
+    <None Include="Resources\Images\Help\add registry - 1.png" />
+    <None Include="Resources\Images\Help\add registry - 0.png" />
+    <None Include="Resources\Help\help0026.html" />
+    <None Include="Resources\Help\help0029.html" />
+    <None Include="Resources\Help\help0012.html" />
+    <None Include="Resources\Help\help0028.html" />
+    <None Include="Resources\Help\help0027.html" />
+    <None Include="Resources\Images\Help\scan results - hotfixes.png" />
+    <None Include="Resources\Help\help0030.html" />
+    <None Include="Resources\Icons\16\16 - Server With Properties.ico" />
+    <None Include="Resources\Help\help0031.html" />
+    <None Include="Resources\Icons\16\16 - Server - New.ico" />
+    <None Include="Resources\Images\Other\fs-l-g.png" />
+    <None Include="Resources\Images\Other\fs-r-g.png" />
+    <None Include="Resources\Images\Other\fs-c-g.png" />
+    <None Include="Resources\Icons\16\16 - Connection.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Services.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Drive.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Eventlog.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - File.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Hotfix.ico" />
+    <None Include="Resources\Icons\16\16 - Resource - Registry.ico" />
+    <None Include="Resources\Icons\48\48 - Drive.ico" />
+    <None Include="Resources\Help\help0032.html" />
+    <None Include="Resources\Icons\16\16 - Resource - Drive - System.ico" />
+    <None Include="Resources\Help\help0033.html" />
+    <None Include="Resources\Images\Help\server properties exclude drives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="icoMain.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WUApiLib">
+      <Guid>{B596CC9F-56E5-419E-A622-E01BB457431E}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icoMain.ico" />
+    <None Include="Resources\Images\Help\menu - eventlog - filter - add.png" />
+    <None Include="Resources\Images\Help\menu - eventlog - filter - remove.png" />
+    <None Include="Resources\Images\Help\add registry - 2.png" />
+    <None Include="Resources\Help\help0014.html" />
+    <None Include="Resources\Images\Help\server stats - 3.png" />
+    <None Include="Resources\Images\Help\server stats - 2.png" />
+    <None Include="Resources\Images\Help\server stats - 1.png" />
+    <None Include="Resources\Images\Help\server stats - 4.png" />
+    <None Include="Resources\Help\help0037.html" />
+    <None Include="Resources\Icons\16\16 - Suffix - Show.ico" />
+    <None Include="Resources\Icons\16\16 - Suffix - Hide.ico" />
+    <None Include="Resources\Icons\48\48 - Domain Search.ico" />
+    <None Include="Resources\Icons\48\48 - Statistics.ico" />
+    <None Include="Resources\Icons\16\16 - ServerGroup - Nope.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - GreaterThanOrEqualTo.ico" />
+    <None Include="Resources\Icons\16\16 - Operator - LessThanOrEqualTo.ico" />
+    <None Include="Resources\Icons\16\16 - Locate Path.ico" />
+    <None Include="Resources\Icons\16\16 - Case - Lower.ico" />
+    <None Include="Resources\Icons\16\16 - Case - Upper.ico" />
+    <None Include="Resources\Icons\16\16 - Scan - Exception.ico" />
+    <None Include="Resources\Images\Help\resource duplication warning 1.png" />
+    <None Include="Resources\Images\Help\resource duplication warning 2.png" />
+    <None Include="Resources\Images\Help\add eventlog - 2.png" />
+    <None Include="Resources\Images\Help\add eventlog - 1.png" />
+    <None Include="Resources\Images\Other\HelpAboutBackground.png" />
+    <None Include="Resources\Icons\64\64 - Task - New.ico" />
+    <None Include="Resources\Icons\64\64 - Task - Help.ico" />
+    <None Include="Resources\Icons\64\64 - Task - Open.ico" />
+    <None Include="Resources\Icons\48\48 - Server - Error.ico" />
+    <None Include="Resources\Icons\48\48 - Server With Properties.ico" />
+    <None Include="Resources\Icons\48\48 - Server Compare.ico" />
+    <None Include="Resources\Icons\16\16 - Edit.ico" />
+    <None Include="Resources\Icons\48\48 - Drive_Local - Disabled - Show.ico" />
+    <None Include="Resources\Icons\16\16 - CheckBox - Mid.ico" />
+    <None Include="Resources\Icons\16 - frmMainIcon.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - White.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Red.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Pink.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Orange.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Grey.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Green.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Cyan.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Blue.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Black.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - _New.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - _Denied.ico" />
+    <None Include="Resources\Icons\16\GroupColours\4\16 - Group - 4 - Yellow.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - White.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Red.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Pink.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Orange.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Grey.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Green.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Cyan.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Blue.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Black.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - _New.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - _Denied.ico" />
+    <None Include="Resources\Icons\16\GroupColours\3\16 - Group - 3 - Yellow.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - _Denied.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - _Denied.ico" />
+    <None Include="Resources\Icons\16\_16 - Nope Overlay.ico" />
+    <None Include="Resources\Icons\16\_16 - New.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Yellow.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - White.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Red.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Pink.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Orange.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Grey.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Green.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Cyan.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Blue.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - _New.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - _New.ico" />
+    <None Include="Resources\Icons\16\GroupColours\2\16 - Group - 2 - Black.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - White.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Red.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Pink.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Orange.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Grey.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Green.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Cyan.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Blue.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Black.ico" />
+    <None Include="Resources\Icons\16\GroupColours\1\16 - Group - 1 - Yellow.ico" />
+    <None Include="Resources\Icons\16\16 - Book - Open - AD.ico" />
+    <None Include="Resources\Icons\16\16 - Book - Open - Help.ico" />
+    <None Include="Resources\Icons\16\16 - Book - Closed - Help.ico" />
+    <None Include="Resources\Icons\16\16 - Book - Closed - AD.ico" />
+    <None Include="Resources\Icons\16\16 - Move.ico" />
+    <None Include="Resources\Icons\16\16 - Calculator.ico" />
+    <None Include="Resources\Icons\16\16 - Description - Collapse.ico" />
+    <None Include="Resources\Icons\16\16 - Description - Expand.ico" />
+    <None Include="Resources\Images\Help\add services 1.png" />
+    <None Include="Resources\Images\Help\add services 2.png" />
+    <None Include="Resources\Images\Help\service change state.png" />
+    <None Include="Resources\Images\Help\config options.png" />
+    <None Include="Resources\Icons\16\16 - Service - Started.ico" />
+    <None Include="Resources\Icons\16\16 - Service - Stopped.ico" />
+    <None Include="Resources\Icons\16\16 - GroupBy None.ico" />
+    <None Include="Resources\Icons\16\16 - GroupBy Parent.ico" />
+    <None Include="Resources\Icons\16\16 - GroupBy Type.ico" />
+    <None Include="Resources\Icons\16\16 - View Tiles.ico" />
+    <None Include="Resources\Icons\16\16 - View Details.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="False" BuildVersion_UpdateAssemblyVersion="False" BuildVersion_BuildVersioningStyle="None.None.None.None" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

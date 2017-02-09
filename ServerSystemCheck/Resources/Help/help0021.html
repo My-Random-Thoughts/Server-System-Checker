@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Change State
+</span></div></div><div class="cdclvSection">
+<p>
+	With the following resource types, it is possible to quickly change the checking state of a particular resource.
+	<ol>
+		<img src="data:image/png;base64,_16___Resource___Services" height="16px" width="16px">&nbsp; Windows Services
+		<br/><br/>
+		<img src="data:image/png;base64,_16___Resource___Hotfix"   height="16px" width="16px">&nbsp; Hotfix Patches
+	</ol>
+</p>
+<h2>Instructions</h2>
+<p>
+	To do this,
+	<ol type="1">
+		<li>Right-click the resource to want to change,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___ChangeState" height="16px" width="16px">&nbsp; Change Checking State</span> from the pop-up menu,</li>
+		<li>The checking state will change.</li>
+	</ol>
+</p>
+<h2>Check State Toggle Options</h2>
+<p>
+	If you selected more than one resource to change then the following rules will be applied...
+	<ol>
+		<li>For &nbsp;<img src="data:image/png;base64,_16___Resource___Services" height="16px" width="16px">&nbsp; Windows Services, the state will toggle between</li>
+		<ol>
+			Running<br/>
+			Stopped<br/>
+			<!--service_change_state-->
+		</ol>
+		<li>For &nbsp;<img src="data:image/png;base64,_16___Resource___Hotfix"   height="16px" width="16px">&nbsp; Hotfix Patches, the state will toggle between</li>
+		<ol>
+			Installed<br/>
+			Not Installed<br/>
+		</ol>
+	</ol>
+</p>
+<p>
+	If select just one service, a window will appear allowing you to change not just the checking state, but also the service missing option
+	<ol>
+		<li>Service Checking State:<br/>
+			<ol style="compact">
+				<img src="data:image/png;base64,_16___Service___Started" height="16px" width="16px">&nbsp; Running,<br/>
+				<img src="data:image/png;base64,_16___Service___Stopped" height="16px" width="16px">&nbsp; Stopped
+			</ol>
+		</li>
+		<li>Scan Result When Missing:<br/>
+			<ol style="compact">
+				<img src="data:image/png;base64,_16___Scan___Pass"        height="16px" width="16px">&nbsp; OK (Ignore),<br/>
+				<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px">&nbsp; Warning,<br/>
+				<img src="data:image/png;base64,_16___Scan___Failed"      height="16px" width="16px">&nbsp; Fail
+			</ol>
+		</li>
+	</ol>
+</p>
+<h2>Example Image</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,service_change_state">
+	</ol>
+</p>
+</body></html>

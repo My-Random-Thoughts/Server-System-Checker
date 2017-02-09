@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+WMI Query Examples
+</span></div></div><div class="cdclvSection">
+<p>
+	WMI Queries allow you to create custom queries to interrogate your servers hardware and software information.<br/>
+</p>
+<h2>WMI Query Examples</h2>
+<p>
+	These examples are very simple ones, but more complicated queries can be generated.
+</p>
+<h3>Example 1</h3>
+<p>
+	This example will get the number of logical drives in the server that are formatted as FAT32...
+	<ul>
+		<li><span class="code">SELECT Format FROM Win32_Volume WHERE Format = 'FAT32'</span><br/><i>Return a count value</i></li>
+	</ul>
+	You can then check against this return value to make sure it is what you require.
+</p>
+<h3>Example 2</h3>
+<p>
+	This example will return either '32-bit' or '64-bit'...
+	<ul>
+		<li><span class="code">SELECT OSArchitecture FROM Win32_OperatingSystem</span></li>
+	</ul>
+	Again, this can be checked against to weed out 32-bit servers.
+</p>	
+<h3>Example 3</h3>
+<p>
+	This will check to see if the selected server is a virtual one from VMware....
+	<ul>
+		<li><span class="code">SELECT Vendor FROM Win32_ComputerSystemProduct WHERE Vendor = 'VMware Inc.'</span></li>
+	</ul>
+</p>	
+</body></html>

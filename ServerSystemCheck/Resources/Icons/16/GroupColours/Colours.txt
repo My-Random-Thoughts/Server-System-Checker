@@ -1,0 +1,22 @@
+Colour Settings (using YELLOW) as the base colour...
+
+	Black		GreyScale, Gamma: 0.25, Brightness: -0.25
+	Blue		-50
+	Cyan		+35
+	Green		+20
+	Grey		Saturation: 0
+	Orange		-5
+	Pink		-25
+	Red			-15
+	White		GreyScale (only if lighter than "Grey"
+	Yellow		Base
+
+
+Creating "_Denied" and "_New" icons...
+
+	_NEW
+		Drop size to 13x13 and place in bottom right corner
+		Overlay "New" Icon
+	
+	_DENIED
+		Overlay "Denied" Icon

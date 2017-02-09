@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Eventlog Scan
+</span></div></div><div class="cdclvSection">
+<p>
+	Application, System and Security Eventlogs can be scanned for all new entries since the server was last rebooted.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start adding an Eventlog Scan resource to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add"      height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Resource___Eventlog" height="16px" width="16px">&nbsp; Eventlog Scan</span> from the pop-out menu,</li>
+		<li>From the new window that appears, select either:</li>
+			<ol type="a">
+				<li><img src="data:image/png;base64,radiobutton" height="13px" width="13px">&nbsp; Application</li>
+				<li><img src="data:image/png;base64,radiobutton" height="13px" width="13px">&nbsp; System</li>
+				<li><img src="data:image/png;base64,radiobutton" height="13px" width="13px">&nbsp; Security</li>
+			</ol>
+		</li>
+	</ol>
+
+	<li>Select one of the following two options...</li>
+		<ul>
+			<p><span class="button">Scan All Events</span> or <span class="button">Scan For Specific IDs</span></p>
+		</ul>
+	</li>
+</p>
+<h3>Scan All Events</h3>
+<p>
+	<li>Select one or more of the following eventlog entry types:</li>
+		<ol type="a">
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp;	<img src="data:image/png;base64,_16___Eventlog___Critical"    height="16px" width="16px">&nbsp; Critical</li>
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp;	<img src="data:image/png;base64,_16___Eventlog___Error"       height="16px" width="16px">&nbsp; Error</li>
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp;	<img src="data:image/png;base64,_16___Eventlog___Warning"     height="16px" width="16px">&nbsp; Warning</li>
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp;	<img src="data:image/png;base64,_16___Eventlog___Information" height="16px" width="16px">&nbsp; Information</li>
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; <img src="data:image/png;base64,_16___Eventlog___Success"     height="16px" width="16px">&nbsp; Success Audit</li>
+			<li><img src="data:image/png;base64,checkbox" height="13px" width="13px">&nbsp; <img src="data:image/png;base64,_16___Eventlog___Failure"     height="16px" width="16px">&nbsp; Failure Audit</li>
+		</ol>
+	<li>Enter any exclusions you may have,</li>
+	<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+</p>
+<h3>Scan For Specific IDs</h3>
+<p>
+	<p>Only the Event IDs listed below will be checked.  Any events matching this list will be flagged as a fail.<p>
+	
+	<li>Enter any Event IDs you want to scan specifically for,</li>
+	<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+</p>
+<p>
+	You can now continue to add new resources.
+</p>
+<h2>Sorting And Consolidation Example</h2>
+<p>
+	Any Event IDs entered into either the "Exclude" or "Specific" fields will be automatically sorted and consolidated.
+	This helps will readability and allows for quick searching.
+</p>
+<p>
+	An example of this is shown below...
+</p>
+<p>
+	<ul>
+		<li><strong>Original:    </strong><ul><span class="code">9-12, 7, 15, 2-5, 17, 11-20</span></ul></li>
+		<li><strong>Consolidated:</strong><ul><span class="code">2-5, 7, 9-20</span></ul></li>
+	</ul>
+<p>
+	You can see that 6 entries have been reduced down to just 3, the ranges have also been sorted to make readability easier.
+	<br/>
+	Another example, with the steps taken:
+	<ul>
+		<li><strong>Original:    </strong><ul><span class="code">3-4, 9, 1-2, 8, 12-18, 10, 5-6</span></ul></li>
+		<li>Sort:                         <ul><span class="code">1-2, 3-4, 5-6, 8, 9, 10, 12-18</span></ul></li>
+		<li>Merge:                        <ul><span class="code">1-4, 5-6, 8, 9, 10, 12-18</span></ul></li>
+		<li>Merge:                        <ul><span class="code">1-6, 8, 9, 10, 12-18</span></ul></li>
+		<li>Merge:                        <ul><span class="code">1-6, 8-10, 12-18</span></ul></li>
+		<li><strong>Consolidated:</strong><ul><span class="code">1-6, 8-10, 12-18</span></ul></li>
+	</ul>
+<p>
+	Again, you can see that all the entries have been reduced down to a simpler format
+</p>
+<h2>Example Images</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,add_eventlog___1">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_eventlog___2">
+	</ol>
+</p>
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+WMI Query
+</span></div></div><div class="cdclvSection">
+<p>
+	WMI Queries allow you to create custom queries to interrogate your servers hardware and software information.<br/>
+</p>
+<h2>Instructions</h2>
+<p>
+	To start adding a WMI Query resources to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add"    height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Resource___WMIQuery" height="16px" width="16px">&nbsp; WMI Query</span> from the pop-out menu,</li>
+		<li>From the new window that appears, choose a server to connect to from the drop down list and click <span class="button">Connect</span>,</li>
+		<li>A filtered list of WMI classes will be retrieved and shown, choose the one you want to work with.</li>
+	</ol>
+</p>
+<br/>
+<p>
+	The WMI Query Builder will be enabled and you can start building your query...
+	<ol type="1">
+		<li>Click the <span class="button_narrow"><img src="data:image/png;base64,_16___Add" height="16px" width="16px"></span> button in the SELECT window,</li>
+		<li>A list of class specific properties will be listed.  Select one to add to the query,</li>
+		<li>Continue adding properties as needed.</li>
+		<li>If you want to filter the results returned, double-click on <span class="code"><strong>Add WHERE Clause</strong></span>,</li>
+		<li>From the window that appears, fill in the details required...
+			<ol type="a" class="compact">
+				<li>Property : <em>The list of properties added to the SELECT field</em>,</li>
+				<li>Operator : <em>The compare operation to perform (equals, does not equal, less than, greater than</em>,</li>
+				<li>Value :    <em>The value to compare with</em>.</li>
+			</ol>
+		</li>
+		<li>Click OK to add the Where clause,</li>
+		<li>Continue adding clauses as needed.</li>
+		<li>If required, change the AND/OR option for all the rules.</li>
+		<li>If more than one result is returned, you will need to tick &nbsp;<img src="data:image/png;base64,checkbox" height="13px" width="13px"> <strong>Return Count Only</strong></li>
+		<li>Click <span class="button">Test Query</span> to check the query executes successfully,</li>
+		<li>Select the compare operation to check the result against.</li>
+
+		<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new resources.  Remember, resources are hierarchical.
+</p>
+<h2>Please Note</h2>
+<p>
+	Query results must produce either a TRUE or FALSE answer, therefore any query that returns a list of items (services, processes, etc) must be set as a list count comparison.<br/>
+	For example: <strong><span class="code">SELECT Name FROM Win32_Process</span></strong> would produce a long list of processes currently running on a server.<br/>
+	Filtering this list with WHERE clauses will reduce this list into a meaningful result, from which you can check either...
+	<ul>
+		<li>against one specific process - does process "abc" exist, or,</li>
+		<li>a count of specific processes - does the number of processes equal "x"</li>
+	</ul>
+</p>
+<h2>Example Queries</h2>
+<p>
+	Have a look at the sub-topic for some examples of this query type
+</p>
+<h2>Sample Images</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,add_wmi___1">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_wmi___2">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_wmi___3">
+	</ol>
+</p>
+</body></html>

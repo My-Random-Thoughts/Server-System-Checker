@@ -1,0 +1,117 @@
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Registry Scan
+</span></div></div><div class="cdclvSection">
+<p>
+	Registry Scans allow you to check for the existence of a registry value and check for correct data.<br/>
+	Entire registry exported .REG files can be also be added for quick scanning.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start adding an Registry Scan resource to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add"      height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Resource___Registry" height="16px" width="16px">&nbsp; Registry Scan</span> from the pop-out menu,</li>
+		<li>From the new window that appears, you can either:</li>
+		<ol type="a">
+			<li>Fill out the boxes to create a single registry check item, or,</li>
+			<li>Click the <span class="button">Import REG File</span> button to import an existing *.reg file.</li>
+		</ol>
+	</ol>
+</p>
+<h3>Single Entry</h3>
+<p>
+	To enter a single registry scan entry, perform the following steps...
+	<ol type="1">
+		<li>Enter the full path of the registry key you want to check for.
+			HKEY_LOCAL_MACHINE is automatically assumed as this is the only key that can be checked remotely.<br/>
+		<li>Enter the name of the registry value you want to check for.  Use "<span class="code">(Default)</span>" for the default registry value name</li>
+		<li>Select the type of registry value you are checking,<br/>
+			Options are:
+			<ol style="compact">
+				<img src="data:image/png;base64,_16___Registry___STR" height="16px" width="16px">&nbsp; String Value,<br/>
+				<img src="data:image/png;base64,_16___Registry___HEX" height="16px" width="16px">&nbsp; Binary Value,<br/>
+				<img src="data:image/png;base64,_16___Registry___HEX" height="16px" width="16px">&nbsp; DWORD (32-bit) Value,<br/>
+				<img src="data:image/png;base64,_16___Registry___HEX" height="16px" width="16px">&nbsp; QWORD (64-bit) Value,<br/>
+				<img src="data:image/png;base64,_16___Registry___STR" height="16px" width="16px">&nbsp; Multi-String Value,<br/>
+				<img src="data:image/png;base64,_16___Registry___STR" height="16px" width="16px">&nbsp; Expandable String Value.
+			</ol>
+		</li>
+		<li>Enter the data of the value you want to check for,</li>
+		<li>Select the required scan result returned if the current item is not found.<br/>
+			Options are:
+			<ol style="compact">
+				<img src="data:image/png;base64,_16___Scan___Pass"        height="16px" width="16px">&nbsp; OK,<br/>
+				<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px">&nbsp; Warning,<br/>
+				<img src="data:image/png;base64,_16___Scan___Failed"      height="16px" width="16px">&nbsp; Fail.
+			</ol>
+		</li>
+		<li>Click <span class="button">OK</span> to add the entered resource to the selected group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new resources.
+</p>
+<br/>
+<h3>Search The Registry</h3>
+<p>
+	A search button <span class="button">...</span> is located next to the Registry Key field.
+	This will allow you search for a specific key-value to use.
+</p>
+<p>
+	Clicking the button will open a new window and will automatically display all sub-keys under HKEY_LOCAL_MACHINE.
+	<ol>
+		<li>Drill down the various sub-keys until you find the value you are looking for.</li>
+		<li>Click the <span class="button">OK</span> button </li>
+		<li>The window will close, and the correct values will be automatically inserted</li>
+		<li>Click <span class="button">OK</span> to add the entered resource to the selected group.</li>
+	</ol>
+</p>
+<br/>
+<h3>Import .REG File</h3>
+<p>
+	To import an existing exported registry .REG file, perform the following steps...
+</p>
+	<ol>
+		<li>Click the <span class="button">Import .REG File</span> button,</li>
+		<li>Click the <span class="button">Select File</span> button,</li>
+		<li>From the Open File Dialog box, select the file you want to import,</li>
+		<li>The file will be loaded and all valid entries will be scanned and added to the list window,</li>
+		<li>Verify the imported entries</li>
+		<li>Select the required scan result returned if the current items are not found.<br/>
+			Options are:
+			<ol>
+				<img src="data:image/png;base64,_16___Scan___Pass" height="16px" width="16px">&nbsp; OK,<br/><br/>
+				<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px">&nbsp; Warning,<br/><br/>
+				<img src="data:image/png;base64,_16___Scan___Failed" height="16px" width="16px">&nbsp; Fail.
+			</ol>
+		</li>
+		<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+	</ol>
+
+<h2>Example Image</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,add_registry___0">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_registry___2">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,add_registry___1">
+	</ol>
+</p>
+</body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+File Check
+</span></div></div><div class="cdclvSection">
+<p>
+	Files can be scanned for on the servers, and can be checked to see if they exist or not, or even the file version or last modified date.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start adding an File Check resource to your group structure,
+	<ol type="1">
+		<li>Select the group or sub-group that you want to add resources too,</li>
+		<li>Right-click either:</li>
+		<ol type="a">
+			<li>The group in the left-hand group window, or,</li>
+			<li>Right-click the right-hand resource windows,</li>
+		</ol>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Add"  height="16px" width="16px">&nbsp; Add Resource</span> from the pop-up menu,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Resource___File" height="16px" width="16px">&nbsp; File Check</span> from the pop-out menu,</li>
+		<li>From the new window that appears, either:</li>
+			<ol type="a">
+				<li>Type in the location of the file to be checked, or,</li>
+				<li>Click the <span class="button">...</span>browse button to select a file.</li>
+			</ol>
+		<li>Select one of the following options:</li>
+			<ol type="a">
+				<li><img src="data:image/png;base64,radiobutton___on" height="13px" width="13px">&nbsp; Check File Exists</li>
+				<li><img src="data:image/png;base64,radiobutton"      height="13px" width="13px">&nbsp; Check File Does Not Exists</li>
+				<li><img src="data:image/png;base64,radiobutton"      height="13px" width="13px">&nbsp; Modified Date</li>
+				<ol>
+					Enter the required date, then select either of the following options<br/>
+					<img src="data:image/png;base64,_16___Calendar___OnOrBefore" height="16px" width="16px">&nbsp; On Or Before<br/>
+					<img src="data:image/png;base64,_16___Calendar___OnOrAfter"  height="16px" width="16px">&nbsp; On Or After
+				</ol>
+				<li><img src="data:image/png;base64,radiobutton"      height="13px" width="13px">&nbsp; Version</li>
+				<ol>
+					Enter the version you want to check for, then select one of the following options<br/>
+					<img src="data:image/png;base64,_16___Calendar___Exactly"    height="16px" width="16px">&nbsp; Exactly<br/>
+					<img src="data:image/png;base64,_16___Calendar___OnOrBefore" height="16px" width="16px">&nbsp; Equal Or Less Than<br/>
+					<img src="data:image/png;base64,_16___Calendar___OnOrAfter"  height="16px" width="16px">&nbsp; Equal Or Greater Than
+				</ol>
+			</ol>
+		<li>Click <span class="button">OK</span> to add the entered resources to the selected group.</li>
+	</ol>
+</p>
+<p>
+	You can now continue to add new resources.
+</p>
+<h2>Drive Letters</h2>
+<p>
+	Please note that drive letters will not be changed from the values entered.
+</p>
+</p>
+	This means, for example, if a file check if configure to look for a file on a E: drive,
+	but the scanned server does not have an E: drive, then the scan will fail.<br/>
+	It is common for older Citrix Presentation Server (pre-XenApp) Servers to use M: as their C: drive.
+</p>
+<h2>Example Image</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,add_file_scan">
+	</ol>
+</p>
+</body></html>

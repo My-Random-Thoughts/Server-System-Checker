@@ -1,0 +1,181 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	line-height: normal;
+	font-family: Segoe UI, Tahoma, Arial, Verdana;
+	font-size: 85%;
+	min-width: 385px;
+}
+
+.code
+{
+	font-family: Courier New !important;
+}
+
+.black
+{
+	color: #000000;
+}
+
+.grey
+{
+	color: #909090;
+}
+
+img
+{
+	vertical-align: middle;
+}
+
+th
+{
+	text-align: left;
+	padding: 0 10px 2px 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #909090;
+	border-bottom-width: 1px;
+}
+
+td
+{
+	padding: 2px 10px 2px 10px;
+	white-space: nowrap;
+}
+
+hr
+{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border-bottom-style: solid;
+	border-bottom-color: #909090;
+	border-width: 0 0 1px 0;
+}
+
+.cdclvSection
+{
+	margin: 15px 10px 0px 10px;
+}
+
+.cdclvBreadcrumbs
+{
+	border-bottom: #b6b6b6 1px solid;
+	padding: 3px 10px 3px 10px;
+	background-color: #f2f2f2;
+	line-height: 1.1em;
+	color: #666666;
+	font-size: 0.9em;
+}
+
+.cdclvAssistTitleCont
+{
+	min-height: 22px;
+	padding: 8px 15px 9px;
+	margin: 0 0 10px;
+	background-color: #f9f9f9;
+	border-bottom: #e2e2e2 1px solid;
+}
+
+.cdclvAssistTitle
+{
+	font-weight: bold;
+	font-size: 1.9em;
+	margin: 0px;
+	padding: 0px;
+	color: #999999;
+}
+
+.cdclvSection h2
+{
+	font-size: 20px;
+	font-family: Segoe UI, Arial, Verdana;
+	font-weight: normal;
+	color: #454545;
+	margin: 35px 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom-style: solid;
+	border-bottom-color: #ffc200;
+	border-bottom-width: 1px;
+	line-height: 0.9em;
+}
+
+.cdclvSection h3
+{
+	font-size: 15px;
+	font-family: Segoe UI, Arial, Verdana;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #454545;
+	margin: 25px 0px 10px 0px;
+	padding: 0;
+}
+
+.cdclvSection h2 + h3, .cdclvSection h3 + p
+{
+	margin: 5px 0 0px 0;
+}
+
+.cdclvSection ol
+{
+	list-style-position: outside;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+
+.cdclvSection ol li
+{
+	padding: 3px 0em;
+}
+
+.cdclvSection ol.compact li, .cdclvSection ul.compact li
+{
+	padding: 1px 0em;
+	margin: 0px;
+}
+
+.cdclvSection li
+{
+	margin: 5px 0px;
+}
+
+.cdclvSection ol li ol
+{
+	padding: 5px 0em;
+}
+
+.cdclvSection ol ol
+{
+	padding: 0px 0em 5px 0em;
+}
+
+.cdclvSection .button
+{
+	background: #f0f0f0;
+	border-width: 1px 2px 2px 1px;
+	padding: 2px 7px;
+}
+
+.cdclvSection .button_narrow
+{
+	background: #f0f0f0;
+	border-width: 1px 2px 2px 1px;
+	padding: 2px 2px;
+}
+
+
+.cdclvSection .menu
+{
+	background: #fcfcfc;
+	border: 1px;
+	padding: 2px 7px 2px 4px;
+}
+
+.cdclvSection .button, .cdclvSection .menu, .button_narrow
+{
+	border-style: solid;
+	border-color: #e0e0e0;
+	margin: 0 2px;
+	color: #000;
+	white-space: nowrap;
+}

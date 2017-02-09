@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Command Line Options
+</span></div></div><div class="cdclvSection">
+<p>
+	The following table lists all the command line options for this application, and describes their meanings.
+</p>
+<p>
+	If no command line is given, or just a filename is added with no switches, the application will launch and open the specified file.
+	This is similar to launching the application by double-clicking on an associated file (.SSC).
+</p>
+<h2>Commands</h2>
+<p>
+	<ol>
+	<table>
+		<tr>
+			<th>Command</th>
+			<th>Meaning</th>
+		</tr>
+		<tr>
+			<td class="code">-?</td>
+			<td>Shows this help window</td>
+		</tr>
+		<tr>
+			<td class="code">-file:"filename"</td>
+			<td>Specifies the configuration file to load<br/>File names should be in double-quotes</td>
+		</tr>
+		<tr>
+			<td class="code">-group:"group-path"</td>
+			<td>Specifies the full group path to scan<br/>Group names should be in double-quotes</td>
+		</tr>
+		<tr>
+			<td class="code">-report:[full|basic]</td>
+			<td>Specifies which report type to run when the scan process has completed</td>
+		</tr>
+	</table>
+	</ol>
+</p>
+<h2>Examples</h2>
+<p>
+	<ol class="compact">
+		<li class="code">ssc.exe -file:"c:\all servers.ssc" -group:"Domain Controllers" -report:basic</li>
+		<li class="code">ssc.exe -file:"c:\all servers.ssc" -group:"Domain Controllers\RODC\Leeds" -report:full</li>
+		<li class="code">ssc.exe -file:"c:\all servers.ssc" -group:"Servers\Remote\Terminal Servers" -report:full</li>
+	</ol>
+</p>
+<p></p>
+</body></html>

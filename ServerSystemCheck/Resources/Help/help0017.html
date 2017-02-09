@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Scan Group
+</span></div></div><div class="cdclvSection">
+<p>
+	Once you have your environment configured as you need it, you can start to scan your groups.
+	Scanning before a large task (Windows patching, for example) will allow you to get a base
+	line of results to compare against.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start scanning a group,
+	<ol type="1">
+		<li>Select and right-click the group you want to scan,</li>
+		<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Scan___Scanning" height="16px" width="16px">&nbsp; Scan Group...</span>
+		from the pop-up menu, or press the <span class="button">F9</span> key</li>
+	</ol>
+</p>
+<p>
+	A new scan window will appear, and will show the tree structure of the selected group, along with all the servers in that structure.
+	The scan will start automatically, and a progress bar will show its current status.
+</p>
+<p>
+	Each server will scanned in turn, with the current status of each resource type shown.
+</p>
+<p>
+	Once the scan has completed, you can hover over each scan result icon to see some brief information about the result.
+	From here you have several options:
+	<ol type="a">
+		<li>Double-click a server to see it's detailed scan report, or,</li>
+		<li>Click the <span class="button">Export</span> button to produce a summary of the results currently shown.</li>
+		<li>If a server was rejected or not scanned, you can right-click it and select
+			<span class="menu"><img src="data:image/png;base64,_16___ChangeState" height="16px" width="16px">&nbsp; Re-scan Selected Server</span>
+		</li>
+	</ol>
+</p>
+<h2>Results Legend</h2>
+<p>
+	The following list explains the icons that are being displayed in the scan window:
+	<ol>
+		<img src="data:image/png;base64,_16___Scan___Scanning"    height="16px" width="16px">&nbsp; - Currently scanning this object<br/>
+		<img src="data:image/png;base64,_16___Scan___Pass"        height="16px" width="16px">&nbsp; - The scan was successful<br/>
+		<img src="data:image/png;base64,_16___Eventlog___Warning" height="16px" width="16px">&nbsp; - The scan has returned warnings<br/>
+		<img src="data:image/png;base64,_16___Scan___Failed"      height="16px" width="16px">&nbsp; - The scan has returned errors<br/>
+		<img src="data:image/png;base64,_16___Scan___Skipped"     height="16px" width="16px">&nbsp; - Skipped, no scan required<br/>
+		<img src="data:image/png;base64,_16___Scan___Unknown"     height="16px" width="16px">&nbsp; - An unknown error has occurred<br/>
+		<img src="data:image/png;base64,_16___Scan___Exception"   height="16px" width="16px">&nbsp; - Error occurred during scanning
+	</ol>
+</p>
+<h2>Example Images</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,legend">
+	</ol>
+	<ol>
+		<img src="data:image/png;base64,scan">
+	</ol>
+</p>
+</body></html>

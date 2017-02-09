@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'>
+<head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<META NAME="lcid" CONTENT="1033"><title></title><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!-- STYLESHEET -->
+</head><body class="clientViewer"><div id="cdHeader" style="zoom:100%"><div class="cdclvBreadcrumbs"><span>
+&nbsp;<!-- BREADCRUMB -->
+</span></div><div class="cdclvAssistTitleCont"><span class="cdclvAssistTitle">
+Server Connection Editor
+</span></div></div><div class="cdclvSection">
+<p>
+	The Server connection editor allows you to define connection strings for connecting to servers.
+	These settings are saved per configuration file.
+</p>
+<h2>Instructions</h2>
+<p>
+	To start editing the connections,
+	<ol type="1">
+		<li>Either: </li>
+		<ol type="a">
+			<li>Click the <span class="menu">Options</span> menu,</li>
+			<li>Choose the <span class="menu">Configure Server Connections...</span> item</li>
+		</ol>
+		<li>Or:</li>
+		<ol type="a">
+			<li>Right-click a server,</li>
+			<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Properties" height="16px" width="16px">&nbsp; Properties</span> from the pop-up menu,</li>
+			<li>From the window that appears, click the <span class="button">Connect...</span> button,</li>
+			<li>Choose <span class="menu"><img src="data:image/png;base64,_16___Properties" height="16px" width="16px">&nbsp; Configure</span> from the pop-up menu.</li>
+		</ol>
+	</ol>
+</p>
+<p>
+	From the window that appears, you can add, edit or remove and exiting connections, or replace them all with a default connection list.
+</p>
+
+<h3>Add New Connection</h3>
+<p>
+	To add a new connection entry to the list,
+	<ol type="1">
+		<li>Click the <span class="button"><img src="data:image/png;base64,_16___Add" height="16px" width="16px"></span> add button,</li>
+		<li>A new blank entry will be added to the list, start typing a connection name for this new entry.  Press <span class="menu">Enter</span> when done</li>
+		<li>Now enter the connection string for this new connection.  Remember to use <span class="code">#server#</span> as the server name substitution</li>
+	</ol>
+</p>
+
+<h3>Edit Existing Connection</h3>
+<p>
+	To edit an existing entry, double click either the name or the connection string to edit the part you need to.
+	Pressing <span class="menu">Enter</span> will save the changes, pressing <span class="menu">Esc</span> cancel them.
+</p>
+
+<h3>Delete Existing Connection</h3>
+<p>
+	To delete an existing entry, click the <span class="button"><img src="data:image/png;base64,_16___Remove" height="16px" width="16px"></span> remove button.
+</p>
+
+<h2>Default Connection List</h2>
+<p>
+	The following table lists the default connection list that is used when pressing the <span class="button">Load Defaults</span> button
+</p>
+<p>
+	<ol>
+	<table>
+		<tr>
+			<th>Name  </th>
+			<th>Connection String</th>
+		</tr>
+		<tr>
+			<td>HP SMH</td>
+			<td class="code">http://#server#:2301</td>
+		</tr>
+		<tr>
+			<td>HTTP  </td>
+			<td class="code">http://#server#</td>
+		</tr>
+		<tr>
+			<td>iDRAC </td>
+			<td class="code">https://#server#:443</td>
+		</tr>
+		<tr>
+			<td>RDP   </td>
+			<td class="code">mstsc.exe /v:#server#</td>
+		</tr>
+		</table>
+	</ol>
+</p>
+<h2>Example Image</h2>
+<p>
+	<ol>
+		<img src="data:image/png;base64,server_connection_editor">
+	</ol>
+</p>
+</body></html>
