@@ -1,0 +1,19 @@
+<resource ...
+	type="Eventlog Scan"        name="System"                              checking="Critical, Error, Warning, Excluding: 99"         guid="xxxx"
+	type="File Check"           name="C:\Debug\Server System Checker.exe"  checking="Exists|Version: LessThan:1.2014.0723.437"        guid="xxxx"
+	type="Free Space Threshold" name="Free Space Threshold"                checking="10|20|Include"                                   guid="xxxx"
+	type="Hotfix Patch"         name="kb12345678"                          checking="Installed"                                       guid="xxxx"
+	type="Registry Scan"        name="software\microsoft\windows"          checking="123, REG_SZ, Warning"                            guid="xxxx"
+	type="Windows Service"      name="ASP.NET State Service"               checking="Stopped"                                         guid="xxxx"
+	type="WMI Query"            name="WMI Query (xxxx)"                    checking="SELECT Name FROM Win32_Battery| Equal To|1|True" guid="xxxx"
+... />
+
+<settings rg="type" rv="detail" cg="true" un="false" dd="true" gc="true" pg="true" dg="true" ig="2" />
+
+<group name="xxxx" guid="xxxx" colr="4" desc="">
+
+<server name="xxxx" guid="xxxx" />
+<server name="xxxx" guid="xxxx">
+	<exclude drives="A:,B:," />
+    <info i0="OS" i1="Service Pack" i2="RAM|RAM|RAM" i3="Make" i4="Model" i5="Serial" i6="CPUs" i7="CPU Model" i8="Cores" i9="HT" i10="(unused)" />
+</server>
